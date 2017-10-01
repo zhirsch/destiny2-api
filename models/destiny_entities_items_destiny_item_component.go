@@ -27,7 +27,7 @@ type DestinyEntitiesItemsDestinyItemComponent struct {
 	ItemHash uint32 `json:"itemHash,omitempty"`
 
 	// If the item is instanced, it will have an instance ID. Lack of an instance ID implies that the item has no distinct local qualities aside from stack size.
-	ItemInstanceID int64 `json:"itemInstanceId,omitempty"`
+	ItemInstanceID int64 `json:"itemInstanceId,omitempty,string"`
 
 	// An easy reference for where the item is located. Redundant if you got the item from an Inventory, but useful when making detail calls on specific items.
 	Location DestinyItemLocation `json:"location,omitempty"`

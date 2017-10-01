@@ -24,7 +24,7 @@ type UserUserInfoCard struct {
 	IconPath string `json:"iconPath,omitempty"`
 
 	// Membership ID as they user is known in the Accounts service
-	MembershipID int64 `json:"membershipId,omitempty"`
+	MembershipID int64 `json:"membershipId,omitempty,string"`
 
 	// Type of the membership.
 	MembershipType BungieMembershipType `json:"membershipType,omitempty"`

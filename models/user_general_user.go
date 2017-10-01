@@ -54,7 +54,7 @@ type UserGeneralUser struct {
 	LocaleInheritDefault bool `json:"localeInheritDefault,omitempty"`
 
 	// membership Id
-	MembershipID int64 `json:"membershipId,omitempty"`
+	MembershipID int64 `json:"membershipId,omitempty,string"`
 
 	// normalized name
 	NormalizedName string `json:"normalizedName,omitempty"`
@@ -93,7 +93,7 @@ type UserGeneralUser struct {
 	StatusText string `json:"statusText,omitempty"`
 
 	// success message flags
-	SuccessMessageFlags int64 `json:"successMessageFlags,omitempty"`
+	SuccessMessageFlags int64 `json:"successMessageFlags,omitempty,string"`
 
 	// unique name
 	UniqueName string `json:"uniqueName,omitempty"`

@@ -18,7 +18,7 @@ import (
 type DestinyEntitiesProfilesDestinyProfileComponent struct {
 
 	// A list of the character IDs, for further querying on your part.
-	CharacterIds []int64 `json:"characterIds"`
+	CharacterIds []string `json:"characterIds"`
 
 	// The last time the user played with any character on this Profile.
 	DateLastPlayed strfmt.DateTime `json:"dateLastPlayed,omitempty"`
