@@ -42,7 +42,7 @@ type GroupsV2GroupV2 struct {
 	ClanInfo *GroupsV2GroupV2ClanInfoAndInvestment `json:"clanInfo,omitempty"`
 
 	// conversation Id
-	ConversationID int64 `json:"conversationId,omitempty"`
+	ConversationID int64 `json:"conversationId,omitempty,string"`
 
 	// creation date
 	CreationDate strfmt.DateTime `json:"creationDate,omitempty"`
@@ -57,7 +57,7 @@ type GroupsV2GroupV2 struct {
 	Features *GroupsV2GroupFeatures `json:"features,omitempty"`
 
 	// group Id
-	GroupID int64 `json:"groupId,omitempty"`
+	GroupID int64 `json:"groupId,omitempty,string"`
 
 	// group type
 	GroupType GroupsV2GroupType `json:"groupType,omitempty"`
@@ -84,7 +84,7 @@ type GroupsV2GroupV2 struct {
 	MemberCount int32 `json:"memberCount,omitempty"`
 
 	// membership Id created
-	MembershipIDCreated int64 `json:"membershipIdCreated,omitempty"`
+	MembershipIDCreated int64 `json:"membershipIdCreated,omitempty,string"`
 
 	// membership option
 	MembershipOption GroupsV2MembershipOption `json:"membershipOption,omitempty"`
@@ -99,7 +99,7 @@ type GroupsV2GroupV2 struct {
 	Name string `json:"name,omitempty"`
 
 	// primary allied group Id
-	PrimaryAlliedGroupID int64 `json:"primaryAlliedGroupId,omitempty"`
+	PrimaryAlliedGroupID int64 `json:"primaryAlliedGroupId,omitempty,string"`
 
 	// tags
 	Tags []string `json:"tags"`

@@ -24,7 +24,7 @@ type GroupsV2GroupMember struct {
 	DestinyUserInfo *UserUserInfoCard `json:"destinyUserInfo,omitempty"`
 
 	// group Id
-	GroupID int64 `json:"groupId,omitempty"`
+	GroupID int64 `json:"groupId,omitempty,string"`
 
 	// is online
 	IsOnline bool `json:"isOnline,omitempty"`

@@ -18,7 +18,7 @@ import (
 type DestinyHistoricalStatsDestinyPostGameCarnageReportEntry struct {
 
 	// ID of the player's character used in the activity.
-	CharacterID int64 `json:"characterId,omitempty"`
+	CharacterID int64 `json:"characterId,omitempty,string"`
 
 	// Extended data extracted from the activity blob.
 	Extended *DestinyHistoricalStatsDestinyPostGameCarnageReportExtendedData `json:"extended,omitempty"`

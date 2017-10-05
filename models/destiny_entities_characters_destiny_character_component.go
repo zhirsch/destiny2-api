@@ -21,7 +21,7 @@ type DestinyEntitiesCharactersDestinyCharacterComponent struct {
 	BaseCharacterLevel int32 `json:"baseCharacterLevel,omitempty"`
 
 	// The unique identifier for the character.
-	CharacterID int64 `json:"characterId,omitempty"`
+	CharacterID int64 `json:"characterId,omitempty,string"`
 
 	// Use this hash to look up the character's DestinyClassDefinition.
 	ClassHash uint32 `json:"classHash,omitempty"`
@@ -56,16 +56,16 @@ type DestinyEntitiesCharactersDestinyCharacterComponent struct {
 	Light int32 `json:"light,omitempty"`
 
 	// Every Destiny Profile has a membershipId. This is provided on the character as well for convenience.
-	MembershipID int64 `json:"membershipId,omitempty"`
+	MembershipID int64 `json:"membershipId,omitempty,string"`
 
 	// membershipType tells you the platform on which the character plays. Examine the BungieMembershipType enumeration for possible values.
 	MembershipType BungieMembershipType `json:"membershipType,omitempty"`
 
 	// If the user is currently playing, this is how long they've been playing.
-	MinutesPlayedThisSession int64 `json:"minutesPlayedThisSession,omitempty"`
+	MinutesPlayedThisSession int64 `json:"minutesPlayedThisSession,omitempty,string"`
 
 	// If this value is 525,600, then they played Destiny for a year. Or they're a very dedicated Rent fan. Note that this includes idle time, not just time spent actually in activities shooting things.
-	MinutesPlayedTotal int64 `json:"minutesPlayedTotal,omitempty"`
+	MinutesPlayedTotal int64 `json:"minutesPlayedTotal,omitempty,string"`
 
 	// A number between 0 and 100, indicating the whole and fractional % remaining to get to the next character level.
 	PercentToNextLevel float32 `json:"percentToNextLevel,omitempty"`

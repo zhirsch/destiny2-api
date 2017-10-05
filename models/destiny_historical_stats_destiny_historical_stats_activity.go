@@ -23,7 +23,7 @@ type DestinyHistoricalStatsDestinyHistoricalStatsActivity struct {
 	DirectorActivityHash uint32 `json:"directorActivityHash,omitempty"`
 
 	// This value can be used to get additional data about this activity such as who else was playing.
-	InstanceID int64 `json:"instanceId,omitempty"`
+	InstanceID int64 `json:"instanceId,omitempty,string"`
 
 	// Whether or not the match was a private match.
 	IsPrivate bool `json:"isPrivate,omitempty"`
